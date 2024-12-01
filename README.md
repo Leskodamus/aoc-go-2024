@@ -5,4 +5,5 @@ Using Golang after a year of experience.
 
 ## Solved days
 
-- [] Day 1
+- [X] Day 1
+- [ ] Day 2
