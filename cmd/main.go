@@ -1,14 +1,5 @@
 package main
 
-/*
-CLI syntax:
-    go run main.go <day> <part> [input file]
-
-    <day> - day of the challenge {1..25}
-    <part> - part of the challenge {1,2}
-    [input file] - optional input file, defaults to input.txt in directory of <day>
-*/
-
 import (
 	"aoc2024/cmd/day1"
 	"aoc2024/internal/util"
@@ -18,11 +9,6 @@ import (
 )
 
 func main() {
-	flag.Usage = func() {
-		fmt.Fprintf(flag.CommandLine.Output(), "Usage: %s <day> <part> [input file]\n", os.Args[0])
-		flag.PrintDefaults()
-	}
-
 	// Parse CLI arguments
 	var day, part int
 	var input string
